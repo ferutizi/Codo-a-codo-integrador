@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: #353a40;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav--item:hover {
+    cursor: pointer;
+}
+
+.about--container {
+    background-color: black;
+}
+
+.about--title {
+    margin: 0;
+    color: aliceblue;
+}
+
+.about--img {
+    opacity: 0.4;
+}
+
+.about--text {
+    color: aliceblue;
+}

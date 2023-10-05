@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Integrador codo a codo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="d-flex align-items-center">
+            <img class="header--logo" src="./img/codoacodo.png" style="width: 8rem">
+            <h2 class="text-white">Conf Bs As</h2>
+        </div>
+        <nav class="nav fw-semibold">
+            <a class="nav--item text-decoration-none text-white">La conferencia</a>
+            <a class="nav--item text-decoration-none text-white-50">Los oradores</a>
+            <a class="nav--item text-decoration-none text-white-50">El lugar y la fecha</a>
+            <a class="nav--item text-decoration-none text-white-50">Conviértete en orador</a>
+            <a class="nav--item text-decoration-none text-success">Comprar tickets</a>
+        </nav>
+    </header>
+    <section class="about">
+        <div class="about--container">
+            <!-- Carousel -->
+            <div id="carousel" class="carousel slide carousel-dark position-relative z-0 d-flex justify-content-end" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/ba1.jpg" class="d-block w-100 about--img object-fit-cover" style="max-height: 36em;" alt="Buenos Aires">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/ba2.jpg" class="d-block w-100 about--img object-fit-cover" style="max-height: 36em;" alt="Buenos Aires">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/ba3.jpg" class="d-block w-100 about--img object-fit-cover" style="max-height: 36em;" alt="Buenos Aires">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="position-absolute left-50 z-1 text-end" style="margin: 0 8rem; width: 30em; top: 40%;">
+                    <h1 class="about--title m-1">Conf Bs As</h1>
+                    <p class="about--text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="about--buttons">
+                        <button type="button" class="btn btn-outline-light m-2">Quiero ser orador</button>
+                        <button type="button" class="btn btn-success">Comprar tickets</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin carousel -->
+        </section>
+    <section class="d-flex align-items-center flex-column">
+        <div class="d-flex flex-column">
+            <p class="d-block m-0 text-center fs-8 mt-2">CONOCE A LOS</p>
+            <h2 class="mt-0">ORADORES</h2>
+        </div>
+        <!-- Cards oradores -->
+        <article class="d-flex gap-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                <div class="card-body">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex bg-warning b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold m-0" style="font-size: 12px;">JavaScript</p>
+                        </div>
+                        <div class="d-flex bg-info b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold text-white m-0" style="font-size: 12px;">React</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text" style="font-size: 12px; line-height: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum ipsa labore laudantium quam corrupti est delectus aperiam atque cupiditate velit repudiandae similique, praesentium asperiores, obcaecati voluptatibus voluptatum minima! Mollitia.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                <div class="card-body">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex bg-warning b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold m-0" style="font-size: 12px;">JavaScript</p>
+                        </div>
+                        <div class="d-flex bg-info b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold text-white m-0" style="font-size: 12px;">React</p>
+                        </div>
+                    </div>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text" style="font-size: 12px; line-height: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque voluptates quod, ab illum consequatur adipisci nostrum perspiciatis unde odit excepturi, architecto quia sequi veritatis libero minima. Eligendi, corporis aut.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                <div class="card-body">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex bg-secondary b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold text-white m-0" style="font-size: 12px;">Negocios</p>
+                        </div>
+                        <div class="d-flex bg-danger b-1 rounded px-2 py-0" style="height: fit-content;">
+                            <p class="fw-bold text-white m-0" style="font-size: 12px;">Startups</p>
+                        </div>
+                    </div>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text" style="font-size: 12px; line-height: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque voluptates quod, ab illum consequatur adipisci nostrum perspiciatis unde odit excepturi, architecto quia sequi veritatis libero minima. Eligendi, corporis aut.</p>
+                </div>
+            </div>
+        </article>
+        <!-- Fin Card Oradores -->
+    </section>
+    <section>
+        <div>
+            <!-- img -->
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <button></button>
+        </div>
+    </section>
+    <section>
+        <p>CONVIERTETE EN UN</p>
+        <h2>ORADOR</h2>
+        <P>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</P>
+        <form>
+            <div>
+                <input>
+                <input>
+            </div>
+            <textarea></textarea>
+        </form>
+        <p>Recuerda incluit un yítulo para tu charla</p>
+        <button>Enviar</button>
+    </section>
+    <footer>
+        <a>Preguntas frecuentes</a>
+        <a>Contáctanos</a>
+        <a>Prensa</a>
+        <a>Conferencias</a>
+        <a>Términos y condiciones</a>
+        <a>Privacidad</a>
+        <a>Estudiantes</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
