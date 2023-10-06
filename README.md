@@ -6,6 +6,7 @@ Trabajo integrador Frontend de Codo a Codo. Podés ver el deploy [ACA](https://f
 
 - HTML
 - Bootstrap
+- CSS
 
 # Contacto
 

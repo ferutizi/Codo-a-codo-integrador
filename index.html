@@ -8,19 +8,19 @@
     <title>Integrador codo a codo</title>
 </head>
 <body>
-    <header class="bg-gray d-flex justify-content-around">
+    <nav class="bg-gray navbar navbar-expand-lg d-flex justify-content-around">
         <div class="d-flex align-items-center">
             <img class="header--logo" src="./img/codoacodo.png" style="width: 8rem">
             <h2 class="text-white">Conf Bs As</h2>
         </div>
-        <nav class="d-flex align-items-center gap-4 fw-semibold">
+        <div class="d-flex flex-wrap align-items-center justify-content-around gap-3 fw-semibold mx-4" id="navbar-query">
             <a class="text-decoration-none text-white cursor-pointer">La conferencia</a>
             <a class="text-decoration-none text-white-50 cursor-pointer">Los oradores</a>
             <a class="text-decoration-none text-white-50 cursor-pointer">El lugar y la fecha</a>
             <a class="text-decoration-none text-white-50 cursor-pointer">Conviértete en orador</a>
             <a class="text-decoration-none text-success cursor-pointer">Comprar tickets</a>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <section class="about">
         <div class="bg-black">
             <!-- Carousel -->
@@ -46,7 +46,13 @@
                 </button>
                 <div class="position-absolute left-50 z-1 text-end" style="margin: 0 8rem; width: 30em; top: 40%;">
                     <h1 class="text-white m-1">Conf Bs As</h1>
-                    <p class="text-white">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <p class="text-white">
+                        Bs As llega por primera vez a Argentina. Un evento para compartir 
+                        con nuestra comunidad el conocimiento y experiencia de los 
+                        expertos que están creando el futuro de Internet. Ven a conocer 
+                        a miembros del evento, a otros estudiantes de Codo a Codo y los 
+                        oradores de primer nivel que tenemos para ti. Te esperamos!
+                    </p>
                     <div class="about--buttons">
                         <button type="button" class="btn btn-outline-light m-2">Quiero ser orador</button>
                         <button type="button" class="btn btn-success">Comprar tickets</button>
@@ -61,7 +67,7 @@
             <h2 class="mt-0">ORADORES</h2>
         </div>
         <!-- Cards oradores -->
-        <article class="d-flex gap-4">
+        <article class="d-flex flex-wrap gap-4 container container-fluid justify-content-center">
             <div class="card" style="width: 18rem;">
                 <img src="./img/steve.jpg" class="card-img-top" alt="Steve Jobs">
                 <div class="card-body">
@@ -128,7 +134,9 @@
             <p class="d-block m-0 text-center mt-4" style="font-size: 12px;">CONVIERTETE EN UN</p>
             <h2 class="mt-0">ORADOR</h2>
         </div>
-        <p class="mb-2">Anótate como orador para dar una <span style="border-bottom: 1px dotted #000">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+        <div class="mb-2 mx-4 d-flex justify-content-center">
+            <p class="text-center">Anótate como orador para dar una <span style="border-bottom: 1px dotted #000">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+        </div>
         <form class="w-50">
             <div class="d-flex">
                 <label for="name" class="form-label"></label>
