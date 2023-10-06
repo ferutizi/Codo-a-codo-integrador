@@ -116,9 +116,9 @@
         </article>
         <!-- Fin Card Oradores -->
     </section>
-    <section class="d-flex mt-5">
-        <img src="./img/honolulu.jpg" style="width: 50vw;">
-        <div class="bg-gray p-3" style="width: 50vw;">
+    <section class="mt-5 row g-0">
+        <img src="./img/honolulu.jpg" class="col-12 col-md-6">
+        <div class="bg-gray p-3 col-12 col-md-6">
             <h2 class="text-white">Bs As - Octubre</h2>
             <p class="text-white">
                 Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la
@@ -134,30 +134,36 @@
             <p class="d-block m-0 text-center mt-4" style="font-size: 12px;">CONVIERTETE EN UN</p>
             <h2 class="mt-0">ORADOR</h2>
         </div>
-        <div class="mb-2 mx-4 d-flex justify-content-center">
+        <div class="mx-4 d-flex justify-content-center">
             <p class="text-center">Anótate como orador para dar una <span style="border-bottom: 1px dotted #000">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
         </div>
-        <form class="w-50">
-            <div class="d-flex">
-                <label for="name" class="form-label"></label>
-                <input type="text" class="form-control me-2 text-secondary" id="name" placeholder="Nombre">
-                <label for="surname" class="form-label"></label>
-                <input type="text" class="form-control ms-2 text-secondary" id="surname" placeholder="Apellido">
+        <form class="mx-5 row">
+            <div class="col-12 row g-2" style="box-sizing: content-box;">
+                <div class="col-12 col-md-6 m-0 ps-0">
+                    <label for="name" class="form-label"></label>
+                    <input type="text" class="form-control text-secondary " id="name" placeholder="Nombre">
+                </div>
+                <div class="col-12 col-md-6 m-0 pe-0">
+                    <label for="surname" class="form-label"></label>
+                    <input type="text" class="form-control text-secondary" id="surname" placeholder="Apellido">
+                </div>
             </div>
-            <label for="tema-charla" class="form-label"></label>
-            <textarea class="form-control fs-5 text-secondary" id="tema-charla" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            <div class="col-12 p-0">
+                <label for="tema-charla" class="form-label"></label>
+                <textarea class="form-control fs-5 text-secondary" id="tema-charla" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            </div>
             <p class="text-left text-secondary" style="font-size: 12px;">Recuerda incluir un título para tu charla</p>
             <button type="button" style="background-color: #96c93e; border: none;" class="btn btn-success w-100 fs-5">Enviar</button>
         </form>
     </section>
-    <footer class="d-flex justify-content-around align-items-center px-5 py-3 text-white w-100 mt-3" style="background-color: #1c3947;">
-        <a style="max-width: 80px;">Preguntas frecuentes</a>
-        <a style="max-width: 80px;">Contáctanos</a>
-        <a style="max-width: 80px;">Prensa</a>
-        <a style="max-width: 80px;">Conferencias</a>
-        <a style="max-width: 80px;">Términos y condiciones</a>
-        <a style="max-width: 80px;">Privacidad</a>
-        <a style="max-width: 80px;">Estudiantes</a>
+    <footer class="d-flex justify-content-around container-fluid align-items-center px-5 py-3 text-white w-100 mt-3 flex-wrap gap-2" style="background-color: #1c3947;">
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Preguntas frecuentes</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Contáctanos</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Prensa</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Conferencias</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Términos y condiciones</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Privacidad</a>
+        <a class="mx-3 text-decoration-none text-white" style="max-width: 100px;">Estudiantes</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
