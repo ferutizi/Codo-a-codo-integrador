@@ -22,53 +22,21 @@ body {
 @media (max-width: 800px) {
     .conferencia-container {
         text-align: center !important;
-        font-size: 12px;
-        right: 5%;
-    }
-}
-
-@media (max-width: 690px) {
-    .conferencia-container {
-        top: 25% !important;
-        right: 0%;
+        margin: 0 !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
     }
 }
 
 @media (max-width: 600px) {
-    .conferencia-container {
-        right: -2%;
-    }
-}
-
-@media (max-width: 565px) {
-    .conferencia-container {
-        right: -3%;
-    }
-}
-
-@media (max-width: 520px) {
-    .conferencia-container {
-        right: -10%;
-        text-align: left !important;
-    }
-}
-
-@media (max-width: 460px) {
-    .conferencia-container {
-        top: 10% !important;
-        right: -20%;
-    }
-}
-
-@media (max-width: 410px) {
-    .conferencia-container {
-        top: 2% !important;
-        right: -37%;
+    .conferencia-container { 
+        font-size: 12px !important;
     }
 }
 
 @media (max-width: 359px) {
     .conferencia-container {
-        visibility: hidden;
+        visibility: hidden !important;
     }
 }
