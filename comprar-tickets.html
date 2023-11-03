@@ -68,28 +68,28 @@
                         <p class="d-block m-0 text-center fs-8 mt-2">VENTA</p>
                         <h2 class="mt-0">Valor de ticket $200</h2>
                     </div>
-                    <form action="">
+                    <form action="" id="formulario">
                         <div class="row">
                             <div class="col-md mb-3">
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"  required>
+                                <input type="text" class="form-control" name="name" placeholder="Nombre" aria-label="Nombre"  required>
                             </div>
                             <div class="col-md mb-3">
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+                                <input type="text" class="form-control" name="surname" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
-                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="mail" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" id="mail" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md mb-3">
                                 <label for="cantidadTickets" class="form-label">Cantidad</label>
-                                <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required>
+                                <input type="number" name="amount" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required>
                             </div>
                             <div class="col-md mb-3">
                                 <label for="categoriaTicket" class="form-label">Categoría</label>
-                                <select class="form-select" aria-label="Categoría" id="categoriaTicket">
+                                <select class="form-select" name="category" aria-label="Categoría" id="categoriaTicket">
                                     <option value="" selected>-- Seleccione --</option>
                                     <option value="0">Sin Categoria</option>
                                     <option value="1">Estudiante</option>
@@ -98,15 +98,15 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="alert alert-primary mt-2 mb-4" role="alert">
-                            Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                        <div class="alert alert-primary mt-2 mb-4" role="alert" id="totalPago">
+                            Total a pagar: $
                         </div>
                         <div class="row">
                             <div class="col-md mb-3">
                                 <button type="reset" class="btn btn-success w-100 fs-5 btn-main" id="btnBorrar">Borrar</button>
                             </div>
                             <div class="col-md mb-3">
-                                <button class="btn btn-success w-100 fs-5 btn-main" id="btnResumen">Resumen</button>
+                                <button onclick="getTickets()" type="button" class="btn btn-success w-100 fs-5 btn-main" id="btnResumen">Resumen</button>
                             </div>
                         </div>
                     </form>
