@@ -15,8 +15,13 @@ body {
     opacity: 0.4;
 }
 
-.btn-green {
-    background-color: #a6ca50;
+.btn-main {
+    background-color: #96c93e !important;
+    border: none !important;
+}
+
+.btn-main:hover {
+    background-color: hsl(82, 57%, 42%) !important;
 }
 
 @media (max-width: 800px) {
