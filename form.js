@@ -2,6 +2,7 @@ const formulario = document.getElementById('formulario');
 const cantidad = formulario.amount;
 const categoria = formulario.category;
 const totalPago = document.getElementById('totalPago');
+const btnResumen = document.getElementById('btnResumen')
 const btnBorrar = document.getElementById('btnBorrar');
 const valor = 200;
 let descuento = 1;
@@ -12,7 +13,7 @@ btnBorrar.addEventListener('click', () => {
     totalPago.removeChild(span)
 })
 
-function getTickets() {
+btnResumen.addEventListener('click', () => {
     switch (categoria.value) {
         case '1':
             /* 80% */
@@ -33,4 +34,4 @@ function getTickets() {
     total = valor * cantidad.value * descuento;
     span.textContent = total
     totalPago.appendChild(span)
-}
+})
